@@ -38,23 +38,24 @@
         %th Candidates
       %tbody
       - @info.contests.each do |c|
-        %tr
-          %td
-            = c.type
-          %td
-            = c.district.name
-          %td
-            = c.office
-          %td
-            - unless c.candidates.nil?
+        - unless c.candidates.nil?
+          %tr
+            %td
+              = c.type
+            %td
+              = c.district.name
+            %td
+              = c.office
+            %td
               %ul
-                - c.candidates.each do |ca|
+              - c.candidates.each do |ca|
+                %li
+                  %strong
+                    = "#{ca.name} -"
+                  = ca.party
+                - unless ca.candidateUrl.nil?
                   %li
-                    = ca.name.nil? ? "" : ca.name
-                  %li
-                    = ca.party.nil? ? "" : ca.party
-                  %li
-                    = ca.phone.nil? ? "" : ca.phone
-                  %li
-                    = ca.candidateUrl.nil? ? "" : ca.candidateUrl
+                    %a{:href=> ca.candidateUrl, :target => "_blank"}
+                      = ca.candidateUrl
+                %hr
 
