@@ -3,7 +3,7 @@
 A simple Sinatra app that use the Google Civic Ruby Gem to look up information:
 https://developers.google.com/civic-information/
 
-## <a name="installation">Installation</a>
+## Installation
     git clone git://github.com/ryanatwork/google_lookup.git
     cd google_lookup
     bundle install
@@ -12,7 +12,7 @@ https://developers.google.com/civic-information/
 
 Open your browser to http://localhost:3000 to see the web views
 
-## <a name="contributing">Contributing</a>
+## Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help improve this project.
 
 [free-sw]: http://www.fsf.org/licensing/essays/free-sw.html
@@ -31,7 +31,7 @@ Here are some ways *you* can contribute:
 
 [issues]: https://github.com/ryanatwork/google_civic/issues
 
-## <a name="issues">Submitting an Issue</a>
+## Submitting an Issue
 We use the [GitHub issue tracker][issues] to track bugs and features. Before
 submitting a bug report or feature request, check to make sure it hasn't
 already been submitted. You can indicate support for an existing issuse by
@@ -42,7 +42,7 @@ bug report should include a pull request with failing specs.
 
 [gist]: https://gist.github.com/
 
-## <a name="pulls">Submitting a Pull Request</a>
+## Submitting a Pull Request
 1. Fork the project.
 2. Create a topic branch.
 3. Implement your feature or bug fix.
@@ -52,6 +52,6 @@ bug report should include a pull request with failing specs.
 7. Submit a pull request. Please do not include changes to the gemspec or version file. (If you want to create your own version for some reason, please do so in a separate commit.)
 
 
-## <a name="copyright">Copyright</a>
+## Copyright
 Copyright (c) 2012 Ryan Resella.
 See [LICENSE](https://github.com/ryanatwork/google_civic/blob/master/LICENSE.mkd) for details.
