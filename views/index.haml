@@ -1,6 +1,8 @@
-.row
-  .span8
-    %h1 Lookup Your Polling Place
-    %form{:action => "lookup", :method => "get", :class => "form-inline"}
-      %input{:type => "text", :name => "address", :class => "input-xlarge"}
-      %input{:type => "submit", :value => "Go", :class => "btn btn-primary"}
+.jumbotron
+  .row
+    .span8
+      %h1 Lookup Your Polling Place
+      %form{:action => "lookup", :method => "get", :class => "form-inline"}
+        %input{:type => "text", :name => "address", :class => "input-xlarge"}
+        %input{:type => "submit", :value => "Go", :class => "btn btn-primary"}
+        %p (Enter full address example: 1263 Pacific Ave. Kansas City KS)
