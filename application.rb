@@ -7,7 +7,7 @@ get '/' do
 end
 
 get '/lookup' do
-  @client = GoogleCivic.new(:key => ENV['google_key'])
+  @client = GoogleCivic.new(:key => ENV['GOOGLE_KEY'])
   @info = @client.voter_info(4000, params[:address])
   haml :lookup
 end
