@@ -1,0 +1,12 @@
+!!! 5
+%html
+  %head
+    %title Google Civic Information Lookup
+    %link{:href => 'css/bootstrap.min.css', :rel => 'stylesheet', :media => 'screen'}
+  %body
+    .container
+      #content= yield
+    %script{:src => "http://code.jquery.com/jquery-latest.js"}
+    %script{:src => "js/bootstrap.min.js"}
+  %footer
+    Data from the <a href="https://developers.google.com/civic-information/">Google Civic Information API</a>

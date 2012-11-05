@@ -1,0 +1,6 @@
+.row
+  .span8
+    %h1 Lookup Your Polling Place
+    %form{:action => "lookup", :method => "get", :class => "form-inline"}
+      %input{:type => "text", :name => "address", :class => "input-xlarge"}
+      %input{:type => "submit", :value => "Go", :class => "btn btn-primary"}

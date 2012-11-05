@@ -1,0 +1,60 @@
+.row
+  .span8
+    %h1 Information for:
+    %h3
+      = @info.normalizedInput.line1
+      = @info.normalizedInput.city
+      = @info.normalizedInput.state
+      = @info.normalizedInput[:zip]
+
+    %h2 Polling Place Location
+    %h4
+      - @info.pollingLocations.each do |p|
+        = p.address[:locationName]
+        %br
+        = p.address[:line1]
+        = p.address[:line2]
+        = p.address[:line3]
+        %br
+        = p.address[:city]
+        = p.address[:state]
+        = p.address[:zip]
+        %br
+        %br
+        %p
+          Notes:
+          = p.address[:notes]
+        %p
+          Hours:
+          = p.address[:hours]
+
+    %h2 Contests
+
+    %table.table
+      %thead
+        %th Type
+        %th District
+        %th Office
+        %th Candidates
+      %tbody
+      - @info.contests.each do |c|
+        %tr
+          %td
+            = c.type
+          %td
+            = c.district.name
+          %td
+            = c.office
+          %td
+            - unless c.candidates.nil?
+              %ul
+                - c.candidates.each do |ca|
+                  %li
+                    = ca.name.nil? ? "" : ca.name
+                  %li
+                    = ca.party.nil? ? "" : ca.party
+                  %li
+                    = ca.phone.nil? ? "" : ca.phone
+                  %li
+                    = ca.candidateUrl.nil? ? "" : ca.candidateUrl
+
