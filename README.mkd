@@ -1,16 +1,11 @@
-# Sinatra Template
+# Polling Place Lookup
 
-This is my Sinatra Template
-Includes:
-
-* Sinatra
-* Rspec 2
-* Haml
-* Twitter BootStrap
+A simple Sinatra app that use the Google Civic Ruby Gem to look up information:
+https://developers.google.com/civic-information/
 
 ## <a name="installation">Installation</a>
-    git clone git://github.com/ryanatwork/sinatra-template.git
-    cd sinatra-template
+    git clone git://github.com/ryanatwork/google_lookup.git
+    cd google_lookup
     bundle install
 
     bundle exec thin start
@@ -34,7 +29,7 @@ Here are some ways *you* can contribute:
 * by closing [issues][issues]
 * by reviewing patches
 
-[issues]: https://github.com/ryanatwork/sinatra-template/issues
+[issues]: https://github.com/ryanatwork/google_civic/issues
 
 ## <a name="issues">Submitting an Issue</a>
 We use the [GitHub issue tracker][issues] to track bugs and features. Before
@@ -58,5 +53,5 @@ bug report should include a pull request with failing specs.
 
 
 ## <a name="copyright">Copyright</a>
-Copyright (c) 2011 Ryan Resella.
-See [LICENSE](https://github.com/ryanatwork/sinatra-template/blob/master/LICENSE.mkd) for details.
+Copyright (c) 2012 Ryan Resella.
+See [LICENSE](https://github.com/ryanatwork/google_civic/blob/master/LICENSE.mkd) for details.
